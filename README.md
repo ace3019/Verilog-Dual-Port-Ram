@@ -1,4 +1,4 @@
-# True Dual-Port RAM (SystemVerilog)
+# True Dual-Port RAM (Verilog)
 
 A synthesizable 64 x 8-bit, single-clock true dual-port RAM implementation.
 
