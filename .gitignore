@@ -1,0 +1,23 @@
+# Simulation and synthesis tool output
+*.vcd
+*.fst
+*.wlf
+*.log
+*.jou
+*.str
+*.xpr
+*.bit
+*.bin
+*.rpt
+*.xml
+
+# Common editor and OS files
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini
+
+# Local Codex working directories
+work/
+outputs/
