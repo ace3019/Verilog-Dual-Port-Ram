@@ -3,7 +3,19 @@
 A synthesizable 64 x 8-bit, single-clock true dual-port RAM implementation.
 
 ## Interface
-
+                    ┌─────────────────────┐
+       Port A       │                     │
+ data_a ───────────►│                     │──► q_a
+ addr_a ───────────►│      64 × 8 RAM     │
+ we_a ─────────────►│                     │
+                    │                     │
+       Port B       │                     │
+ data_b ───────────►│                     │──► q_b
+ addr_b ───────────►│                     │
+ we_b ─────────────►│                     │
+                    │                     │
+ clk ──────────────►│                     │
+                    └─────────────────────┘
 Each port has its own address, write enable, data input, and data output. Both ports operate on the rising edge of the same clock.
 
 | Signal | Description |
