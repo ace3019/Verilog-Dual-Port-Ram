@@ -16,6 +16,10 @@ A synthesizable 64 x 8-bit, single-clock true dual-port RAM implementation.
                     │                     │
  clk ──────────────►│                     │
                     └─────────────────────┘
+
+
+
+                    
 Each port has its own address, write enable, data input, and data output. Both ports operate on the rising edge of the same clock.
 
 | Signal | Description |
