@@ -1,22 +1,7 @@
 # True Dual-Port RAM (Verilog)
 
 A synthesizable 64 x 8-bit, single-clock true dual-port RAM implementation.
-
-                    ┌─────────────────────┐
-       Port A       │                     │
- data_a ───────────►│                     │──► q_a
- addr_a ───────────►│      64 × 8 RAM     │
- we_a ─────────────►│                     │
-                    │                     │
-       Port B       │                     │
- data_b ───────────►│                     │──► q_b
- addr_b ───────────►│                     │
- we_b ─────────────►│                     │
-                    │                     │
- clk ──────────────►│                     │
-                    └─────────────────────┘
-
-
+<img width="546" height="370" alt="image" src="https://github.com/user-attachments/assets/c1d26b19-3906-44b4-b9ef-5bc2153290a3" />
 
 
 
