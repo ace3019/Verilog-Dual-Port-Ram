@@ -2,7 +2,6 @@
 
 A synthesizable 64 x 8-bit, single-clock true dual-port RAM implementation.
 
-## Interface
                     ┌─────────────────────┐
        Port A       │                     │
  data_a ───────────►│                     │──► q_a
@@ -19,6 +18,10 @@ A synthesizable 64 x 8-bit, single-clock true dual-port RAM implementation.
 
 
 
+
+
+                    
+## Interface
                     
 Each port has its own address, write enable, data input, and data output. Both ports operate on the rising edge of the same clock.
 
@@ -38,14 +41,14 @@ Each port has its own address, write enable, data input, and data output. Both p
 ## Layout
 
 ```
-src/true_dual_port_ram.sv  Synthesizable RAM module
-tb/true_dual_port_ram_tb.sv Basic simulation testbench
+src/true_dual_port_ram.v  Synthesizable RAM module
+tb/true_dual_port_ram_tb.v Basic simulation testbench
 ```
 
 ## Simulating with Icarus Verilog
 
 ```powershell
-iverilog -g2012 -o simv src/true_dual_port_ram.sv tb/true_dual_port_ram_tb.sv
+iverilog -g2012 -o simv src/true_dual_port_ram.sv tb/true_dual_port_ram_tb.v
 vvp simv
 ```
 
